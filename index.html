@@ -15,9 +15,10 @@ h1,h2,h3,h4{line-height:1.2;margin:0 0 .5em}a{color:inherit;text-decoration:none
 .util a:hover{color:#fff}.util .r{margin-left:auto;display:flex;gap:18px}
 header.hd{position:sticky;top:env(safe-area-inset-top,0px);z-index:80;background:var(--bg);border-bottom:1px solid var(--bd);transition:box-shadow .3s}
 header.hd.sc{box-shadow:var(--sh)}header.hd .w{display:flex;align-items:center;gap:26px;height:70px;transition:height .3s}header.hd.sc .w{height:58px}
-.logo{display:flex;align-items:center;gap:9px;font-weight:800;font-size:1.15rem;color:var(--nv)}
-@media(prefers-color-scheme:dark){:root:not([data-theme=light]) .logo{color:#fff}}
-.logo i{width:28px;height:28px;border-radius:50%;background:conic-gradient(var(--pr),var(--tl),var(--gd),var(--pr));animation:spin 9s linear infinite}
+.logo{display:flex;align-items:center;flex:0 0 auto;color:var(--nv)}
+.logo img{display:block;width:112px;height:auto;max-height:64px;object-fit:contain}
+footer .logo{display:inline-flex;background:#fff;padding:5px 9px;border-radius:6px}
+footer .logo img{width:150px;max-height:none;height:auto}
 @keyframes spin{to{transform:rotate(360deg)}}
 nav.mn{display:flex;gap:4px;margin-left:10px}
 nav.mn>a,.mg>a{padding:8px 13px;border-radius:8px;font-weight:600;font-size:.94rem;position:relative;transition:background .25s,color .25s}
@@ -79,12 +80,12 @@ footer{background:var(--nv);color:#9fb0cc;padding:56px 0 30px;font-size:.85rem}f
 </style></head><body>
 <div id="bar"></div>
 <div class="util"><div class="w"><a data-r="home">Investor</a><a data-r="contact">Distributor</a><a data-r="contact">Corporate</a><a data-r="contact">MSME</a><div class="r"><a data-r="downloads">Downloads</a><a data-r="services">Investor Services</a><a data-r="contact">Contact Us</a></div></div></div>
-<header class="hd"><div class="w"><a class="logo" data-r="home"><i></i>TRISPHERE <span style="font-weight:500;opacity:.7">Mutual Fund</span></a>
+<header class="hd"><div class="w"><a class="logo" data-r="home" aria-label="Trisphere Asset Management home"><img src="./trisphere-logo.png" alt="Trisphere Asset Management"></a>
 <nav class="mn" id="mn"><div class="mg"><a data-r="funds">Our Funds ▾</a><div class="dd"><a data-r="fund">Trisphere Multi Asset Allocation Fund<small>Hybrid · NFO 13–20 Nov 2026</small></a><a data-r="funds">Equity Funds<small>Coming soon</small></a><a data-r="funds">Debt Funds<small>Coming soon</small></a></div></div>
 <a data-r="fund">Invest</a><a data-r="tools">Tools</a><a data-r="services">Investor Services</a><a data-r="learn">Knowledge</a><a data-r="about">About Us</a></nav>
 <div class="sp"></div><button class="btn i" data-invest>Invest Now</button><button class="hb" id="hb" aria-label="Menu">☰</button></div></header>
 <main id="app"></main>
-<footer><div class="w"><div class="fg"><div><a class="logo" style="color:#fff" data-r="home"><i></i>TRISPHERE</a><p style="margin-top:12px">Trisphere Mutual Fund · Trisphere Asset Management Private Limited, 41/17/10 D, Kailash Ghosh Road, Behala, Kolkata – 700008</p><p>compliance@trisphereamc.com<br>+91 33 2400 0000<br>www.trisphereamc.com</p></div>
+<footer><div class="w"><div class="fg"><div><a class="logo" data-r="home" aria-label="Trisphere Asset Management home"><img src="./trisphere-logo.png" alt="Trisphere Asset Management"></a><p style="margin-top:12px">Trisphere Mutual Fund · Trisphere Asset Management Private Limited, 41/17/10 D, Kailash Ghosh Road, Behala, Kolkata – 700008</p><p>compliance@trisphereamc.com<br>+91 33 2400 0000<br>www.trisphereamc.com</p></div>
 <div><h4>Funds</h4><a data-r="fund">Multi Asset Allocation</a><a data-r="funds">All Funds</a><a data-r="downloads">Product Labelling</a></div>
 <div><h4>Tools</h4><a data-r="tools">SIP Calculator</a><a data-r="tools">Lumpsum Calculator</a><a data-r="tools">SWP Calculator</a></div>
 <div><h4>Services</h4><a data-r="services">Account Statement</a><a data-r="services">NAV, TER &amp; Others</a><a data-r="services">Update Folio</a><a data-r="services">Nomination</a></div>
